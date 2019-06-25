@@ -44,7 +44,7 @@
     "test:watch": "karma start ./test/karma.config.js"
   },
   "dependencies": {
-    "howler": "^2.1.2",
+    "howler": "https://github.com/gelid/howler.js/tarball/master",
     "math-clamp": "^1.0.0",
     "object-assign": "^4.1.1",
     "object-values": "^1.0.0"
