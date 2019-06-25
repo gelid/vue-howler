@@ -3,8 +3,8 @@ A [Howler.js][howler] [mixin][mixins] for Vue 2 that makes it easy to create cus
 
 ## Installation
 
-```bash
-$ npm install sirg2003/vue-howler
+```package.json
+"vue-howler": "https://github.com/gelid/vue-howler/tarball/master"
 ```
 
 ## Usage
@@ -30,6 +30,13 @@ First create a component that uses the mixin
     <button @click="stop">Stop</button>
   </div>
 </template>
+```
+
+xhronprogreess - only this way work for me
+```
+vm.$data._howl._xhronprogress = function(event){
+		vm.percent = parseInt((event.loaded*100) / event.total) + '%';
+}
 ```
 
 Then you can use that component in your templates
